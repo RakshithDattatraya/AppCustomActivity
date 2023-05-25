@@ -1,0 +1,18 @@
+{
+  "activities": [
+    {
+      "fullName": "AppCustomClassActivity.AppCustomActivity",
+      "shortName": "AppCustomActivity",
+      "displayNameKey": "AppCustomActivity_DisplayName",
+      "descriptionKey": "AppCustomActivity_Desc",
+      "iconKey": "",
+      "properties": [
+      ]
+    }
+  ],
+  "defaultActivityColor": "#FFE4E1",
+  "defaultActivityNameBackgroundColor": "#FFFFFF",
+  "defaultActivityIconKey": "",
+  "assemblyIconKey": "",
+  "resourceManagerName": "AppCustomClassActivity.Resources.Resource1"
+}

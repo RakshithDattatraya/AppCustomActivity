@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\ActivitiesMetadata.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ActivitiesMetadata.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Activities">
+      <HintPath>..\..\..\..\AppData\Local\Programs\UiPath\Studio\System.Activities.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Activities.Core.Presentation">
+      <HintPath>..\..\..\..\AppData\Local\Programs\UiPath\Studio\System.Activities.Core.Presentation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Activities.Metadata">
+      <HintPath>..\..\..\..\AppData\Local\Programs\UiPath\Studio\System.Activities.Metadata.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Activities.Presentation">
+      <HintPath>..\..\..\..\AppData\Local\Programs\UiPath\Studio\System.Activities.Presentation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Resources\Resource1.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
